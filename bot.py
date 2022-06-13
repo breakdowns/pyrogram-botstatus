@@ -29,7 +29,7 @@ async def main_teletips():
     async with app:
         while True:
             print("Checking...")
-            xxx_teletips = f"💠 **[Breakdowns](https://github.com/breakdowns) Bot Status**\n\n"
+            xxx_teletips = f"📈 **[Breakdowns](https://github.com/breakdowns) Bot Status**\n\n"
             for bot in BOT_LIST:
                 name = await app.get_chat(bot)
                 try:
@@ -51,7 +51,7 @@ async def main_teletips():
                                 pass
                         await app.read_chat_history(bot)
                     else:
-                        xxx_teletips += f"• ☑️ [{name.first_name}](https://t.me/{bot})\n"
+                        xxx_teletips += f"• ✅ [{name.first_name}](https://t.me/{bot})\n"
                         await app.read_chat_history(bot)
                 except FloodWait as e:
                     await asyncio.sleep(e.x)
