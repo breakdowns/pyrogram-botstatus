@@ -40,7 +40,7 @@ async def main_teletips():
                     async for ccc in zzz_teletips:
                         bbb = ccc.id
                     if aaa == bbb:
-                        xxx_teletips += f"• ❌ [{name.first_name}](https://t.me/{bot})\n"
+                        xxx_teletips += f"• 🚫 [{name.first_name}](https://t.me/{bot})\n"
                         for bot_admin_id in BOT_ADMIN_IDS:
                             try:
                                 await app.send_message(
@@ -57,7 +57,7 @@ async def main_teletips():
                     await asyncio.sleep(e.x)
             time = datetime.datetime.now(pytz.timezone(f"{TIME_ZONE}"))
             last_update = time.strftime(f"{TIME_FORMAT}")
-            xxx_teletips += f"\n📶 **Last checked:** __{last_update} ({TIME_ZONE})__\n\nℹ️ **Bot Status Are Auto-Updated Every 3 Hours.**"
+            xxx_teletips += f"\n⏳ **Last checked:** __{last_update} ({TIME_ZONE})__\n\nℹ️ **Bot Status Are Auto-Updated Every 3 Hours.**"
             return await app.edit_message_text(
                 int(CHANNEL_OR_GROUP_ID),
                 MESSAGE_ID,
