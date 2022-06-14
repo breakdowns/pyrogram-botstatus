@@ -41,7 +41,7 @@ async def main_teletips():
                         bbb = ccc.id
                     if aaa == bbb:
                         xxx_teletips += f"• 🚫 [{name.first_name}](https://t.me/{bot})\n"
-                        for bot_admin_id in BOT_ADMIN_IDS:
+#                        for bot_admin_id in BOT_ADMIN_IDS:
 #                            try:
 #                                await app.send_message(
 #                                    int(bot_admin_id),
