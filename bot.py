@@ -42,13 +42,13 @@ async def main_teletips():
                     if aaa == bbb:
                         xxx_teletips += f"• 🚫 [{name.first_name}](https://t.me/{bot})\n"
                         for bot_admin_id in BOT_ADMIN_IDS:
-                            try:
-                                await app.send_message(
-                                    int(bot_admin_id),
-                                    f"🚨 **@{bot} is down.**",
-                                )
-                            except Exception:
-                                pass
+#                            try:
+#                                await app.send_message(
+#                                    int(bot_admin_id),
+#                                    f"🚨 **@{bot} is down.**",
+#                                )
+#                            except Exception:
+#                                pass
                         await app.read_chat_history(bot)
                     else:
                         xxx_teletips += f"• ✅ [{name.first_name}](https://t.me/{bot})\n"
