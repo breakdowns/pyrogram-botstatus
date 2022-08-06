@@ -34,7 +34,7 @@ async def main_breakdowns():
                     async for ccc in zzz_breakdowns:
                         bbb = ccc.id
                     if aaa == bbb:
-                        xxx_bbreakdowns += f"• 🚫 [{name.first_name}](https://t.me/{bot})\n"
+                        xxx_breakdowns += f"• 🚫 [{name.first_name}](https://t.me/{bot})\n"
                         await app.read_chat_history(bot)
                     else:
                         xxx_breakdowns += f"• ✅ [{name.first_name}](https://t.me/{bot})\n"
