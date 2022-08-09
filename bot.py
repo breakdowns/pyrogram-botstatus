@@ -35,10 +35,9 @@ async def main_breakdowns():
                         bbb = ccc.id
                     if aaa == bbb:
                         xxx_breakdowns += f"• 🚫 [{name.first_name}](https://t.me/{bot})\n"
-                        await app.read_chat_history(bot)
                     else:
                         xxx_breakdowns += f"• ✅ [{name.first_name}](https://t.me/{bot})\n"
-                        await app.read_chat_history(bot)
+                    await app.read_chat_history(bot)
                 except FloodWait as e:
                     await asyncio.sleep(e.x)
             time = datetime.datetime.now(pytz.timezone(f"{TIME_ZONE}"))
